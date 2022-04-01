@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuoteGraphQL", "QuoteGraphQL\QuoteGraphQL.csproj", "{84A28200-E43E-4F97-8B13-F21DDC729FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuoteGraphQL.Client", "QuoteGraphQL.Client\QuoteGraphQL.Client.csproj", "{16D8ED1E-E2A3-4586-A148-0CAB84CA0C02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84A28200-E43E-4F97-8B13-F21DDC729FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84A28200-E43E-4F97-8B13-F21DDC729FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84A28200-E43E-4F97-8B13-F21DDC729FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84A28200-E43E-4F97-8B13-F21DDC729FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16D8ED1E-E2A3-4586-A148-0CAB84CA0C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16D8ED1E-E2A3-4586-A148-0CAB84CA0C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16D8ED1E-E2A3-4586-A148-0CAB84CA0C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16D8ED1E-E2A3-4586-A148-0CAB84CA0C02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {009D62B7-F303-463E-A126-F027AD4AC274}
+	EndGlobalSection
+EndGlobal

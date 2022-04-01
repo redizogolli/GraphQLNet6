@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">All Quotes</h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <td>Author</td>
+            <td>Quote</td>
+            <td>Category</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var quote in Model.Quotes)
+        {
+            <tr>
+                <td>@quote.Author</td>
+                <td>@quote.Text</td>
+                <td>@quote.Category.Name</td>
+                <td>
+                    <form method="post" class="form-inline">
+                        <input asp-for="@Model.Id" type="hidden" value="@quote.Id"/>
+                        <a href="UpdateQuote?id=@quote.Id" class="btn btn-outline-secondary">Update</a>&nbsp;
+                        <button type="submit" class="btn btn-outline-danger">Delete</button>
+                    </form>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

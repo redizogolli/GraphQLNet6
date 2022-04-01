@@ -1,0 +1,25 @@
+﻿@page
+@model QuoteGraphQL.Client.Pages.UpdateQuoteModel
+@{
+    ViewData["Title"] = "Update Quote";
+}
+<h1>Update Quote</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Quote.Author">Author</label>
+        <input asp-for="Quote.Author" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Quote.Text">Quote</label>
+        <textarea asp-for="Quote.Text" class="form-control" rows="5"></textarea>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quote.CategoryId">Category</label>
+        <select asp-for="Quote.CategoryId" asp-items="@Model.Categories" class="form-control"></select>
+    </div>
+    <input asp-for="Id" type="hidden" value="@Model.Id"/>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
